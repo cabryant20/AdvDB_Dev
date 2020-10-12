@@ -1,5 +1,5 @@
 
-<p>Todo List - Development</p>
+<p>Todo List</p>
 <table border='1'>
 %for row in rows:
     <tr>
