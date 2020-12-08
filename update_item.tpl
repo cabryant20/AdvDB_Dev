@@ -1,6 +1,8 @@
 <p>Update Task</p>
-<form action="/update_item" method="POST">
-    <input type="text" size="100" maxlength="100" name="update_item" value="{{row[1]}}">
-    <input type="hidden" size="100" name="id" value="{{row[0]}}">
-    <input type="submit" name="save" value="Update">
+<form action="/update_task" method="POST">
+    <input type="text" size="100" maxlength="100" name="_id" value="{{str(row['_id'])}}" hidden/>
+    <input type="text" size="100" maxlength="100" name="updated_task" value="{{row['task']}}"/>
+    <hr/>
+    <input type="submit" name="update_button" value="Update"/>
+    <a href="/">Cancel</a>
 </form>
